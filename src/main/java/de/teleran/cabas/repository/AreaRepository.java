@@ -3,8 +3,15 @@ package de.teleran.cabas.repository;
 import de.teleran.cabas.entity.Area;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.Optional;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+public interface AreaRepository extends JpaRepository<Area,Long>{
 
-public interface AreaRepository extends JpaRepository<Area, Long> {
+    Boolean existsByAreaName(String areaName);
+
+    Optional<Area> findByAreaName(String areaName);
+
+    Optional<Area> findByAreaCode(String areaCode);
 }
+
+

@@ -12,4 +12,5 @@ import lombok.NoArgsConstructor;
 public class AreaResponseDTO {
     private String areaName;
     private Long id;
+    //private String areaCode;
 }

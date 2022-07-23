@@ -11,5 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class CityResponseDTO {
     private String cityName;
-    private Long id;
+
+    private Long cityId;
+    private Long areaId;
 }
